@@ -3,5 +3,9 @@ BODY {
 }
 
 img {
-  margin: 0 1em;
+  margin: 0 10%;
+}
+
+img#desktop {
+  width: 80%;
 }

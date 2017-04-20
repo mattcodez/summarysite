@@ -3,9 +3,28 @@ BODY {
 }
 
 img {
-  margin: 0 10%;
+  /* margin: 0 10%; */
 }
 
 img#desktop {
   width: 80%;
+}
+
+.container {
+  text-align: center;
+}
+
+#buyBox {
+  border: 1px solid gray;
+  width: 17rem;
+  padding: 1rem;
+  margin: auto;
+}
+
+#buyBox * {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 40.0rem) {
+  /*#buyBox { width: 20rem}*/
 }

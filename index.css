@@ -1,5 +1,6 @@
 BODY {
   /* background-color: hsla(180, 100%, 37%, 1); */
+  padding-bottom: 2rem;
 }
 
 img {
@@ -31,4 +32,12 @@ UL {
 
 @media (min-width: 40.0rem) {
   /*#buyBox { width: 20rem}*/
+}
+
+.row.contact {
+  margin-top: 2rem;
+}
+
+.row.contact p:first-of-type{
+  margin-bottom: 0;
 }

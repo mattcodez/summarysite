@@ -3,23 +3,25 @@ BODY {
   padding-bottom: 2rem;
 }
 
-img {
-  /* margin: 0 10%; */
-}
-
 img#desktop {
   width: 80%;
+  border-radius: 5%;
 }
 
 .container {
   text-align: center;
 }
 
+.row.aboveFold .column {
+  /*Need to reset this for some reason*/
+  max-width: none;
+}
+
 UL {
   text-align: left;
 }
 
-#buyBox {
+.buyBox {
   border: 1px solid gray;
   width: 17rem;
   padding: 1rem;

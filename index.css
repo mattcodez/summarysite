@@ -4,8 +4,9 @@ BODY {
 }
 
 img#desktop {
-  width: 80%;
+  /* width: 80%; */
   border-radius: 5%;
+  max-height: 500px;
 }
 
 .container {

@@ -18,8 +18,19 @@ img#desktop {
   max-width: none;
 }
 
-UL {
+.features UL {
   text-align: left;
+  background-color: #9b4dca;
+  color: white;
+  border-radius: 12%;
+  padding: 3rem 3rem;
+}
+
+@media (max-width: 40.0rem) {
+  .row.features > .column{
+    max-width: none;
+    margin-left: auto;
+  }
 }
 
 .buyBox {
@@ -31,10 +42,6 @@ UL {
 
 #buyBox * {
   margin-bottom: 0.7rem;
-}
-
-@media (min-width: 40.0rem) {
-  /*#buyBox { width: 20rem}*/
 }
 
 .row.contact {

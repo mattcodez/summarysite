@@ -19,6 +19,10 @@ img#desktop {
   max-width: none;
 }
 
+P#customMsg {
+  margin-top: 1rem;
+}
+
 .subtitle {
   color: #9b4dca;
 }
@@ -49,8 +53,9 @@ img#desktop {
   margin: auto;
 }
 
-#buyBox * {
+.buyBox * {
   margin-bottom: 0.7rem;
+  letter-spacing: 0.02rem;
 }
 
 .row.contact {

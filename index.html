@@ -10,6 +10,31 @@
   <link rel="stylesheet" href="lib/milligram/milligram.min.css">
   <!-- Main CSS -->
   <link rel="stylesheet" href="index.css">
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-3495504-7', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <script>
+    /**
+    * Function that tracks a click on an outbound link in Analytics.
+    * This function takes a valid URL string as an argument, and uses that URL string
+    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+    * using 'navigator.sendBeacon' in browser that support it.
+    */
+    var trackOutboundLink = function(url) {
+       ga('send', 'event', 'outbound', 'click', url, {
+         'transport': 'beacon',
+         'hitCallback': function(){document.location = url;}
+       });
+    }
+  </script>
 </head>
 <body>
   <div class="container">
@@ -65,6 +90,7 @@
         <h3><a
           href="http://mattmolnar.io"
           class="button"
+          onclick="trackOutboundLink('http://mattmolnar.io'); return false;"
           target="_blank">mattmolnar.io</a></h3>
       </div>
     </div>
@@ -88,7 +114,10 @@
       <h4>Full Package</h4>
       <h4>1 Year</h4>
       <h4>$50</h4>
-      <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfOqhZK7dU1bXRnE_HBRUvTiKHnH9N84ThAsS7V1TJbqvhF5w/viewform">Buy Now</a>
+      <a
+        class="button"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfOqhZK7dU1bXRnE_HBRUvTiKHnH9N84ThAsS7V1TJbqvhF5w/viewform"
+        onclick="trackOutboundLink('buynow'); return false;">Buy Now</a>
     </div>
 
     <div class="row contact">
@@ -99,15 +128,5 @@
     </div>
   </div>
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-3495504-7', 'auto');
-    ga('send', 'pageview');
-
-  </script>
 </body>
 </html>
